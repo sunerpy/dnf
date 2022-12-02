@@ -53,6 +53,7 @@ docker run -d -e PUBLIC_IP=x.x.x.x -v /dnfpv/log:/home/neople/game/log -v /dnfpv
 ## 如何确认已经成功启动
 
 1.查看日志 log
+```
 ├── siroco11
 │ ├── Log20211203-09.history
 │ ├── Log20211203.cri
@@ -71,8 +72,10 @@ docker run -d -e PUBLIC_IP=x.x.x.x -v /dnfpv/log:/home/neople/game/log -v /dnfpv
 ├── Log20211203.log
 ├── Log20211203.money
 └── Log20211203.snap
+```
 查看Logxxxx.init文件,五国的初始化日志都在这里
 成功出现五国后,日志文件大概如下,五国初始化时间大概1分钟左右,请耐心等待
+```
 [root@centos-02 siroco11]# tail -f Log20211203.init
 [09:40:23] - RestrictBegin : 1
 [09:40:23] - DropRate : 0
@@ -84,12 +87,15 @@ docker run -d -e PUBLIC_IP=x.x.x.x -v /dnfpv/log:/home/neople/game/log -v /dnfpv
 [09:40:23] GeoIP Allow Country Code : TW
 [09:40:32] [!] Connect To Guild Server ...
 [09:40:32] [!] Connect To Monitor Server ...
+```
 2.查看进程
 在确保日志都正常的情况下,需要查看进程进一步确定程序正常启动
+```
 [root@centos-02 siroco11]# ps -ef |grep df_game
 root 16500 16039 9 20:39 ? 00:01:20 ./df_game_r siroco11 start
 root 16502 16039 9 20:39 ? 00:01:22 ./df_game_r siroco52 start
 root 22514 13398 0 20:53 pts/0 00:00:00 grep --color=auto df_game
+```
 如上结果df_game_r进程是存在的,代表成功.如果不成功可以重启服务
 
 ## 重启服务
