@@ -1,0 +1,2 @@
+Script.tar.xz filter=lfs diff=lfs merge=lfs -text
+DnfServer.tar.xz filter=lfs diff=lfs merge=lfs -text
