@@ -11,7 +11,7 @@ export LANG=en_US.utf-8
 set -o nounset
 # set -o errexit
 
-LOGFILE=/tmp/acrs_$(date +%Y%m%d).log
+LOGFILE=/tmp/dnf_$(date +%Y%m%d).log
 date >"${LOGFILE}"
 
 logger() {
