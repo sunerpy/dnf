@@ -1,0 +1,14 @@
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:20303           0.0.0.0:*               LISTEN      991/./df_dbmw_r     
+tcp        0      0 0.0.0.0:1234            0.0.0.0:*               LISTEN      935/httpd           
+tcp        0      0 0.0.0.0:20403           0.0.0.0:*               LISTEN      979/./df_dbmw_r     
+tcp        0      0 0.0.0.0:40403           0.0.0.0:*               LISTEN      951/./df_manager_r  
+tcp        0      0 0.0.0.0:7000            0.0.0.0:*               LISTEN      1017/./df_bridge_r  
+tcp        0      0 0.0.0.0:7001            0.0.0.0:*               LISTEN      993/./df_channel_r  
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      935/httpd           
+tcp        0      0 127.0.0.1:31100         0.0.0.0:*               LISTEN      1070/./df_community 
+tcp        0      0 0.0.0.0:30303           0.0.0.0:*               LISTEN      955/./df_monitor_r  
+tcp        0      0 0.0.0.0:7200            0.0.0.0:*               LISTEN      965/./df_relay_r    
+tcp        0      0 0.0.0.0:30403           0.0.0.0:*               LISTEN      1066/./df_guild_r   
+tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:20203           0.0.0.0:*               LISTEN      983/./df_dbmw_r 
